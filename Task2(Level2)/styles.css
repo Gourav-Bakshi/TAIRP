@@ -1,0 +1,114 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://pics.craiyon.com/2023-11-16/BjUZcXlZRQWOWgYFMXELWw.webp');
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 50vh;
+}
+
+.search-container,
+.weather-container {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.search-container{
+    
+    background-image: url('https://img.freepik.com/free-vector/flat-design-monsoon-season-clouds-illustration_23-2149424294.jpg?t=st=1720329492~exp=1720333092~hmac=14ee2f690d4aff4adcc898fb28d572d361ce5b7c7de4b33ff29bd7dd7973da32&w=740');
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+}
+.weather-container{
+    background-image: url('https://img.freepik.com/premium-vector/sky-clouds-design-with-flat-cartoon-poster-flyers-postcards-web-banners_771576-58.jpg');
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.forecast-card {
+    background-color: #e4e8ed;
+    padding: 9px;
+    margin: 6px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 120px; 
+}
+
+.forecast-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.forecast-icon img {
+    width: 50px; 
+}
+
+.forecast-temp {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.forecast-description {
+    font-size: 12px;
+    color: #555;
+}

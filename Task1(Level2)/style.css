@@ -1,6 +1,5 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-
 
 * {
     margin: 0;
@@ -42,16 +41,10 @@ input[type="text"] {
     border-radius: 4px;
 }
 
-input[type="text"]:focus , .edit-input:focus{
-    outline: none;
-    border-color: #007bff;
-}
-
 button {    
     background-color: #007bff;
     color: #fff;
     border: none;
-    /* padding: 10px 20px; */
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
@@ -81,7 +74,7 @@ li {
     word-wrap: break-word;
 }
 
-li>span{
+li > span {
     width: 15vw;
 }
 
@@ -103,16 +96,44 @@ li>span{
     opacity: 0.8;
 }
 
-.taskInput{
+.taskInput {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.edit-input{
+.edit-input {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100vw;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 80vw; 
+    }
+
+    input[type="text"] {
+        width: calc(100% - 60px); 
+    }
+
+    button {
+        padding: 10px; 
+    }
+
+    li {
+        flex-direction: column; 
+    }
+
+    li > span {
+        width: 100%; 
+        margin-bottom: 5px;
+    }
+
+    .edit-input {
+        width: calc(100% - 20px); 
+    }
 }

@@ -112,3 +112,25 @@ button:hover {
     font-size: 12px;
     color: #555;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        height: auto;
+        max-height: 80vh; 
+    }
+
+    .search-container,
+    .weather-container {
+        width: 80vw;
+        margin-bottom: 20px; 
+    }
+
+    input[type="text"] {
+        width: calc(100% - 20px); 
+    }
+
+    .forecast-card {
+        width: 100%;
+    }
+}

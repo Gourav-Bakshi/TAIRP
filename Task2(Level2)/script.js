@@ -1,5 +1,5 @@
 
-const apiKey = 'c0accbd099a91d70c0b50ff99fc81823'; 
+const apiKey = 'Your Key'; 
 
 
 document.addEventListener('DOMContentLoaded', function() {
